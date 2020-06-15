@@ -1,0 +1,18 @@
+.form-add{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form-add div{ 
+       margin-right: 0.5em;
+}
+
+.form-container{
+    display: flex;
+    margin: 1em;
+}
+
+.form-edit{
+    flex-direction: column;
+}

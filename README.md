@@ -1,1 +1,13 @@
-# profiles-app
+# Build server
+go to server directory and run:
+`docker build -t profile-backend .`
+
+# Build frontend
+go to app directory and run:
+`docker build -t profile-client .`
+
+run docker-compose.yml with following command:
+docker-compose -f docker-compose.yml up -d
+
+*NOTE*
+This app is using postgres database that runs on port 5432.
