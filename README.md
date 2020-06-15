@@ -4,10 +4,14 @@ go to server directory and run:
 
 # Build frontend
 go to app directory and run:
-`docker build -t profile-client .`
+`docker build -t profile-frontend .`
 
-run docker-compose.yml with following command:
-docker-compose -f docker-compose.yml up -d
-
+# init postgres database
+run the following command:
+`docker-compose -f docker-compose-db.yml up -d`
 *NOTE*
-This app is using postgres database that runs on port 5432.
+Posgres db initialization can take some time
+
+# launch the app 
+run the following command:
+`docker-compose -f docker-compose.yml up -d`
