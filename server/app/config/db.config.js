@@ -1,8 +1,12 @@
+
+const db_host = process.env.DB_HOST || "localhost"
+console.log(`db host - ${process.env.DB_HOST}`)
+
 module.exports = {
-  HOST: "localhost",
+  HOST: db_host,
   USER: "postgres",
   PASSWORD: "1234",
-  DB: "profiles",
+  DB: "",
   dialect: "postgres",
   pool: {
     max: 5,
